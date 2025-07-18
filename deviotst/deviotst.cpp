@@ -244,7 +244,7 @@ wmainCRTStartup()
 
   if (argv == NULL)
     {
-      MessageBoxA(NULL, "This program requires Windows NT/2000/XP.", "ImDisk",
+      MessageBoxA(NULL, "This program requires Windows NT or later.", "ImDisk",
 		  MB_ICONSTOP);
       ExitProcess((UINT)-1);
     }
