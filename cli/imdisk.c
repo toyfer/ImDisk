@@ -1,6 +1,6 @@
 /*
 
-Control program for the ImDisk Virtual Disk Driver for Windows NT/2000/XP.
+Control program for the ImDisk Virtual Disk Driver for Windows NT and later.
 
 Copyright (C) 2004-2023 Olof Lagerkvist.
 
@@ -1961,7 +1961,7 @@ wmain(int argc, LPWSTR argv[])
         if (wcscmp(argv[1], L"--version") == 0)
         {
             printf
-            ("Control program for the ImDisk Virtual Disk Driver for Windows NT/2000/XP.\n"
+            ("Control program for the ImDisk Virtual Disk Driver for Windows NT and later.\n"
                 "Version %i.%i.%i - (Compiled " __DATE__ ")\n"
                 "\n"
                 "Copyright (C) 2004-2023 Olof Lagerkvist.\n"
@@ -2656,7 +2656,7 @@ wmain(int argc, LPWSTR argv[])
 
 #pragma intrinsic(_InterlockedCompareExchange)
 
-#if !defined(_DEBUG) && !defined(DEBUG) && _MSC_PLATFORM_TOOLSET < 140
+#if !defined(_DEBUG) && !defined(DEBUG) && _MSC_PLATFORM_TOOLSET < 142
 
 // We have our own EXE entry to be less dependent on
 // specific MSVCRT code that may not be available in older Windows versions.
@@ -2673,7 +2673,7 @@ wmainCRTStartup()
     {
 #ifndef _M_ARM
         MessageBoxA(NULL,
-            "This program requires Windows NT/2000/XP.",
+            "This program requires Windows NT or later.",
             "ImDisk Virtual Disk Driver",
             MB_ICONSTOP);
 #endif
