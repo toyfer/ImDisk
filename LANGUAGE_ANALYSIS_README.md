@@ -11,7 +11,7 @@ This directory contains a comprehensive analysis of replacing ImDisk's C/C++ imp
 
 ### Key Findings Summary
 
-| Language | Feasibility | Primary Limitations | Recommendation |
+| Language | Technical Feasibility | Primary Limitations | Recommendation |
 |----------|------------|-------------------|----------------|
 | **Go** | ❌ Not Viable | Garbage collector incompatible with kernel mode | Not recommended |
 | **Zig** | ⚠️ Possible but Risky | Immature WDK integration, unstable language | Not recommended currently |
