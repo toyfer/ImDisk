@@ -1,0 +1,14 @@
+[package]
+name = "imdisk-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Rust CLI prototype for ImDisk Virtual Disk Driver (Phase 1 experiment)"
+authors = ["ImDisk Development Team"]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+windows = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_System_IO",
+    "Win32_Storage_FileSystem"
+] }

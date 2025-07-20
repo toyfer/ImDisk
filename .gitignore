@@ -410,3 +410,7 @@ changes.txt
 *.filters
 dirs.sln
 ImDiskNet/DevioNet/Server/Services/DevioDrvService.vb
+
+# Rust build artifacts
+rust-experiments/**/target/
+rust-experiments/**/Cargo.lock
